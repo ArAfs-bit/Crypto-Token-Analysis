@@ -17,7 +17,7 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 
 ### Red Flag 4: ETH Funneling to a Private Address
 - The swap function sends ETH to a private address during swaps, which could be used for a rug pull.
-- **[Screenshot of Swap Function](screenshots/swap_eth_issue.png)**
+- **[Screenshot of Swap Function](screenshots/RedFlag4.png)**
 
 ---
 
