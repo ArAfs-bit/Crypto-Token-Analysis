@@ -13,7 +13,7 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 
 ### Red Flag 3: Arbitrary Transaction Limits
 - The owner can remove transaction limits at any time, allowing for potential manipulation of when users can sell their tokens.
-- **[Screenshot of the Limit Manipulation](screenshots/limit_manipulation.png)**
+- **[Screenshot of the Limit Manipulation](screenshots/RedFlag3.png)**
 
 ### Red Flag 4: ETH Funneling to a Private Address
 - The swap function sends ETH to a private address during swaps, which could be used for a rug pull.
