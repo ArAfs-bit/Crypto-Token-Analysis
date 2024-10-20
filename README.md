@@ -6,7 +6,7 @@ This repository contains the analysis of the PROG Token contract found on Dextoo
 
 ### Red Flag 1: Hidden Buy/Sell Taxes
 - The contract has a 15% tax on both buys and sells.
-- Here's a [screenshot of the issue on Etherscan](screenshots/Etherscan1.png).
+- Here's a [screenshot of the issue on Etherscan](screenshots/Etherscan 1.png).
 
 ### Red Flag 2: Ownership not truly renounced
 - Although the contract claims to renounce ownership, `_purpleforggg` still has privileges.
