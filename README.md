@@ -33,6 +33,7 @@ Key Findings:
 - Price Volatility: Extreme price swings suggest a pump-and-dump scam.
 - Rug Pull: Clear signs of a rug pull, with no remaining liquidity.
 - Conclusion:The DEXTools analysis shows that this token is a scam, with the owner conducting a rug pull and leaving the investors trapped.
+
 [Screenshot of Dextools Analysis](screenshots/Dextools.png)
 
 
