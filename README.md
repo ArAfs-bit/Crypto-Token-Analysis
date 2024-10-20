@@ -1,24 +1,31 @@
 ## Scam Token Analysis: PROG Token (Contract Address: 0x58cb23a3291305dfb3d38fd36ce4c307f2dacbe9)
 
-This repository contains the analysis of the PROG Token contract found on Dextool and manually analyzed through Etherscan and Quick Intel.
+### Introduction
+This repository contains an analysis of the PROG Token, which was found on Dextool and manually analyzed through Etherscan and then Scanned through a crypto token contract scanner Quick Intel. Below is a detailed breakdown of potential red flags and malicious behavior within the contract.
 
-### Red Flag 1: Hidden Buy/Sell Taxes (Potential Scam)
-Problem: 
-The contract includes high initial taxes for both buys and sells, set at 15% (_initBuyTax and _initSellTax).
-While it's common for tokens to have taxes for liquidity and development, such high taxes (15%) without clear transparency are often indicative of a "honeypot" scam.
+### Red Flag 1: Hidden Buy/Sell Taxes
+- The contract sets buy/sell taxes at 15%, which is unusually high and indicative of a honeypot scam.
+- **[Screenshot of the Tax Issue](screenshots/etherscan_tax_issue.png)**
 
-- Here's a [screenshot of the issue on Etherscan](screenshots/RedFlag1.png).
+### Red Flag 2: Ownership Not Truly Renounced
+- The contract claims to renounce ownership but allows a privileged address (`_purpleforggg`) to retain control over the token’s functionality.
+- **[Screenshot from Quick Intel Audit](screenshots/quickintel_ownership_issue.png)**
 
-Explanation:
-A honeypot scam means that users may find it difficult to sell the token after buying because the sell tax might be too high, resulting in large losses for the seller.
+### Red Flag 3: Arbitrary Transaction Limits
+- The owner can remove transaction limits at any time, allowing for potential manipulation of when users can sell their tokens.
+- **[Screenshot of the Limit Manipulation](screenshots/limit_manipulation.png)**
 
-### Red Flag 2: Ownership Not Truly Renounced (Centralized Control)
-Problem: 
-The contract claims to be renounce ownership, but the owner retains privileges, especially over important parameters like buy/sell taxes. There is an address _purpleforggg which seems to have special privileges.
+### Red Flag 4: ETH Funneling to a Private Address
+- The swap function sends ETH to a private address during swaps, which could be used for a rug pull.
+- **[Screenshot of Swap Function](screenshots/swap_eth_issue.png)**
 
-- Here's a [screenshot of the issue on Etherscan](screenshots/RedFlag2.png).
+---
 
-Explanation:
-A truly decentralized contract should not allow the owner or any other address to manipulate critical functions. Here, _purpleforggg may still be able to alter the token’s behavior, which is another indication of potential malicious control.
+### Conclusion
 
+Based on my analysis, this contract has multiple red flags that could indicate a malicious or scam token, including hidden taxes, lack of true decentralization, and arbitrary control over transactions. Investors should be cautious when interacting with tokens of this nature.
 
+By conducting this analysis, I have demonstrated my ability to:
+- Manually analyze smart contracts for potential vulnerabilities.
+- Use blockchain tools like Etherscan and Quick Intel.
+- Understand key red flags that indicate possible scams in token contracts.
