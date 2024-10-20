@@ -24,7 +24,7 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 - **Liquidity**: No liquidity lock found; 0 WETH in liquidity pool.
 - **Sell Tax**: 100%, making it impossible for users to sell their tokens.
 - **Conclusion**: The combination of a failed honeypot test, no liquidity lock, and high sell tax strongly suggests this token is a honeypot scam.
-**[Screenshot of Quick Intel Analysis](screenshots/RedFlag4.png)**
+**[Screenshot of Quick Intel Analysis](screenshots/QuickIntel.png)**
 
 
 
