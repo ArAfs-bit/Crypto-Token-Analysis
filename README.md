@@ -9,22 +9,32 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 
 ### Red Flag 2: Ownership Not Truly Renounced
 - The contract claims to renounce ownership but allows a privileged address (`_purpleforggg`) to retain control over the token’s functionality.
-- **[Screenshot from Quick Intel Audit](screenshots/RedFlag2.png)**
+- [Screenshot from Quick Intel Audit](screenshots/RedFlag2.png)
 
 ### Red Flag 3: Arbitrary Transaction Limits
 - The owner can remove transaction limits at any time, allowing for potential manipulation of when users can sell their tokens.
-- **[Screenshot of the Limit Manipulation](screenshots/RedFlag3.png)**
+- [Screenshot of the Limit Manipulation](screenshots/RedFlag3.png)
 
 ### Red Flag 4: ETH Funneling to a Private Address
 - The swap function sends ETH to a private address during swaps, which could be used for a rug pull.
-- **[Screenshot of Swap Function](screenshots/RedFlag4.png)**
+- [Screenshot of Swap Function](screenshots/RedFlag4.png)
 
 ## Quick Intel Analysis of Purple Frog (PROG)
-- **Honeypot Test**: FAILED
-- **Liquidity**: No liquidity lock found; 0 WETH in liquidity pool.
-- **Sell Tax**: 100%, making it impossible for users to sell their tokens.
-- **Conclusion**: The combination of a failed honeypot test, no liquidity lock, and high sell tax strongly suggests this token is a honeypot scam.
-**[Screenshot of Quick Intel Analysis](screenshots/QuickIntel.png)**
+- Honeypot Test: FAILED
+- Liquidity: No liquidity lock found; 0 WETH in liquidity pool.
+- Sell Tax: 100%, making it impossible for users to sell their tokens.
+- Conclusion: The combination of a failed honeypot test, no liquidity lock, and high sell tax strongly suggests this token is a honeypot scam.
+[Screenshot of Quick Intel Analysis](screenshots/QuickIntel.png)
+
+## DEXTools Analysis of Purple Frog (PROG)
+Key Findings:
+- Liquidity Drain: Over $41,000 removed from the liquidity pool by the owner.
+- Suspicious Owner Activity: A massive sell order resulted in a drastic drop in token value.
+- Price Volatility: Extreme price swings suggest a pump-and-dump scam.
+- Rug Pull: Clear signs of a rug pull, with no remaining liquidity.
+- Conclusion:The DEXTools analysis shows that this token is a scam, with the owner conducting a rug pull and leaving the investors trapped.
+[Screenshot of Dextools Analysis](screenshots/QuickIntel.png)
+
 
 
 
