@@ -9,7 +9,7 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 
 ### Red Flag 2: Ownership Not Truly Renounced
 - The contract claims to renounce ownership but allows a privileged address (`_purpleforggg`) to retain control over the token’s functionality.
-- **[Screenshot from Quick Intel Audit](screenshots/quickintel_ownership_issue.png)**
+- **[Screenshot from Quick Intel Audit](screenshots/RedFlag2.png)**
 
 ### Red Flag 3: Arbitrary Transaction Limits
 - The owner can remove transaction limits at any time, allowing for potential manipulation of when users can sell their tokens.
