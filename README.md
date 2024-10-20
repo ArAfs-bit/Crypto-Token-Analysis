@@ -8,6 +8,6 @@ This repository contains the analysis of the PROG Token contract found on Dextoo
 
 ### Red Flag 2: Ownership not truly renounced
 - Although the contract claims to renounce ownership, `_purpleforggg` still has privileges.
-- Here's a [screenshot from Quick Intel](screenshots/RedFlag2.png).
+- Here's a [screenshot of the issue on Etherscan](screenshots/RedFlag2.png).
 
 
