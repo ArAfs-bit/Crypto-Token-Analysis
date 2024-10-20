@@ -24,6 +24,7 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 - Liquidity: No liquidity lock found; 0 WETH in liquidity pool.
 - Sell Tax: 100%, making it impossible for users to sell their tokens.
 - Conclusion: The combination of a failed honeypot test, no liquidity lock, and high sell tax strongly suggests this token is a honeypot scam.
+
 [Screenshot of Quick Intel Analysis](screenshots/QuickIntel.png)
 
 ## DEXTools Analysis of Purple Frog (PROG)
@@ -33,7 +34,8 @@ Key Findings:
 - Price Volatility: Extreme price swings suggest a pump-and-dump scam.
 - Rug Pull: Clear signs of a rug pull, with no remaining liquidity.
 - Conclusion:The DEXTools analysis shows that this token is a scam, with the owner conducting a rug pull and leaving the investors trapped.
--[Screenshot of Dextools Analysis](screenshots/Dextools.png)
+
+[Screenshot of Dextools Analysis](screenshots/Dextools.png)
 
 
 
