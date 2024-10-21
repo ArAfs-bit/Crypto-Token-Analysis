@@ -48,74 +48,88 @@
 </head>
 <body>
 
- <header style="display: block; background-color: #333; color: #fff; text-align: center; padding: 20px 0;">
+<header style="display: block; background-color: #333; color: #fff; text-align: center; padding: 20px 0;">
   <h1 style="color: #fff;">Scam Token Analysis: PROG Token</h1>
   <p>Contract Address: 0x58cb23a3291305dfb3d38fd36ce4c307f2dacbe9</p>
 </header>
 
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>This website contains an analysis of the PROG Token, which was found on Dextool and manually analyzed through Etherscan. Additionally, it was scanned through a crypto token contract scanner, Quick Intel. Below is a detailed breakdown of potential red flags and malicious behavior within the contract.</p>
-  </section>
+<section id="introduction">
+  <h2>Introduction</h2>
+  <p>This website contains an analysis of the PROG Token, which was found on Dextool and manually analyzed through Etherscan. Additionally, it was scanned through a crypto token contract scanner, Quick Intel. Below is a detailed breakdown of potential red flags and malicious behavior within the contract.</p>
+</section>
 
-  <section id="red-flags">
-    <h2>Red Flags in PROG Token</h2>
+<section id="red-flags">
+  <h2>Red Flags in PROG Token</h2>
 
-    <h3>Red Flag 1: Hidden Buy/Sell Taxes</h3>
-    <p>The contract sets buy/sell taxes at 15%, which is unusually high and indicative of a honeypot scam.</p>
-    <img src="screenshots/RedFlag1.png" alt="Screenshot of the Tax Issue">
+  <h3>Red Flag 1: Hidden Buy/Sell Taxes</h3>
+  <p>The contract sets buy/sell taxes at 15%, which is unusually high and indicative of a honeypot scam.</p>
+  <img src="screenshots/RedFlag1.png" alt="Screenshot of the Tax Issue">
 
-    <h3>Red Flag 2: Ownership Not Truly Renounced</h3>
-    <p>The contract claims to renounce ownership but allows a privileged address (<code>_purpleforggg</code>) to retain control over the token’s functionality.</p>
-    <img src="screenshots/RedFlag2.png" alt="Screenshot of Renounce Ownership Issue">
+  <h3>Red Flag 2: Ownership Not Truly Renounced</h3>
+  <p>The contract claims to renounce ownership but allows a privileged address (<code>_purpleforggg</code>) to retain control over the token’s functionality.</p>
+  <img src="screenshots/RedFlag2.png" alt="Screenshot of Renounce Ownership Issue">
 
-    <h3>Red Flag 3: Arbitrary Transaction Limits</h3>
-    <p>The owner can remove transaction limits at any time, allowing for potential manipulation of when users can sell their tokens.</p>
-    <img src="screenshots/RedFlag3.png" alt="Screenshot of the Limit Manipulation">
+  <h3>Red Flag 3: Arbitrary Transaction Limits</h3>
+  <p>The owner can remove transaction limits at any time, allowing for potential manipulation of when users can sell their tokens.</p>
+  <img src="screenshots/RedFlag3.png" alt="Screenshot of the Limit Manipulation">
 
-    <h3>Red Flag 4: ETH Funneling to a Private Address</h3>
-    <p>The swap function sends ETH to a private address during swaps, which could be used for a rug pull.</p>
-    <img src="screenshots/RedFlag4.png" alt="Screenshot of Swap Function">
-  </section>
+  <h3>Red Flag 4: ETH Funneling to a Private Address</h3>
+  <p>The swap function sends ETH to a private address during swaps, which could be used for a rug pull.</p>
+  <img src="screenshots/RedFlag4.png" alt="Screenshot of Swap Function">
+</section>
 
-  <section id="quick-intel">
-    <h2>Quick Intel Analysis of Purple Frog (PROG)</h2>
-    <ul>
-      <li><strong>Honeypot Test:</strong> FAILED</li>
-      <li><strong>Liquidity:</strong> No liquidity lock found; 0 WETH in liquidity pool.</li>
-      <li><strong>Sell Tax:</strong> 100%, making it impossible for users to sell their tokens.</li>
-    </ul>
-    <p><strong>Conclusion:</strong> The combination of a failed honeypot test, no liquidity lock, and high sell tax strongly suggests this token is a honeypot scam.</p>
-    <img src="screenshots/QuickIntel.png" alt="Screenshot of Quick Intel Analysis">
-  </section>
+<section id="quick-intel">
+  <h2>Quick Intel Analysis of Purple Frog (PROG)</h2>
+  <ul>
+    <li><strong>Honeypot Test:</strong> FAILED</li>
+    <li><strong>Liquidity:</strong> No liquidity lock found; 0 WETH in liquidity pool.</li>
+    <li><strong>Sell Tax:</strong> 100%, making it impossible for users to sell their tokens.</li>
+  </ul>
+  <p><strong>Conclusion:</strong> The combination of a failed honeypot test, no liquidity lock, and high sell tax strongly suggests this token is a honeypot scam.</p>
+  <img src="screenshots/QuickIntel.png" alt="Screenshot of Quick Intel Analysis">
+</section>
 
-  <section id="dextools">
-    <h2>DEXTools Analysis of Purple Frog (PROG)</h2>
-    <h3>Key Findings</h3>
-    <ul>
-      <li><strong>Liquidity Drain:</strong> Over $41,000 removed from the liquidity pool by the owner.</li>
-      <li><strong>Suspicious Owner Activity:</strong> A massive sell order resulted in a drastic drop in token value.</li>
-      <li><strong>Price Volatility:</strong> Extreme price swings suggest a pump-and-dump scam.</li>
-      <li><strong>Rug Pull:</strong> Clear signs of a rug pull, with no remaining liquidity.</li>
-    </ul>
-    <p><strong>Conclusion:</strong> The DEXTools analysis shows that this token is a scam, with the owner conducting a rug pull and leaving the investors trapped.</p>
-    <img src="screenshots/Dextools.png" alt="Screenshot of Dextools Analysis">
-  </section>
+<section id="dextools">
+  <h2>DEXTools Analysis of Purple Frog (PROG)</h2>
+  <h3>Key Findings</h3>
+  <ul>
+    <li><strong>Liquidity Drain:</strong> Over $41,000 removed from the liquidity pool by the owner.</li>
+    <li><strong>Suspicious Owner Activity:</strong> A massive sell order resulted in a drastic drop in token value.</li>
+    <li><strong>Price Volatility:</strong> Extreme price swings suggest a pump-and-dump scam.</li>
+    <li><strong>Rug Pull:</strong> Clear signs of a rug pull, with no remaining liquidity.</li>
+  </ul>
+  <p><strong>Conclusion:</strong> The DEXTools analysis shows that this token is a scam, with the owner conducting a rug pull and leaving the investors trapped.</p>
+  <img src="screenshots/Dextools.png" alt="Screenshot of Dextools Analysis">
+</section>
 
-  <section id="conclusion">
-    <h2>Conclusion</h2>
-    <p>Based on my analysis, this contract has multiple red flags that could indicate a malicious or scam token, including hidden taxes, lack of true decentralization, and arbitrary control over transactions. Investors should be cautious when interacting with tokens of this nature.</p>
-    <p>By conducting this analysis, I have demonstrated my ability to:</p>
-    <ul>
-      <li>Manually analyze smart contracts for potential vulnerabilities.</li>
-      <li>Use blockchain tools like Etherscan and Quick Intel.</li>
-      <li>Understand key red flags that indicate possible scams in token contracts.</li>
-    </ul>
-  </section>
+<!-- New section for Manual Analysis -->
+<section id="manual-analysis">
+  <h2>Manual Analysis</h2>
+  <p>After discovering the PROG token on Dextools, I manually analyzed the contract using Etherscan. Here are the key steps I followed:</p>
+  <ul>
+    <li><strong>Step 1:</strong> Retrieved the token contract from Dextools and located the contract address on Etherscan.</li>
+    <li><strong>Step 2:</strong> Analyzed the contract functions, identifying several red flags, including hidden taxes and a fake ownership renouncement.</li>
+    <li><strong>Step 3:</strong> Ran the contract through Quick Intel and other token scanner websites to confirm the findings.</li>
+    <li><strong>Step 4:</strong> Based on the scan results, verified that the token was a honeypot scam, with no liquidity and a 100% sell tax.</li>
+  </ul>
+  <p><strong>Key Takeaways:</strong> This analysis confirmed that the PROG token is a honeypot scam designed to trap investors, with control retained by the contract owner despite claims of decentralization.</p>
+  <img src="screenshots/ManualAnalysis.png" alt="Screenshot of Manual Contract Analysis">
+</section>
 
-  <footer>
-    <p>Created by Araf. View the project on <a href="https://github.com/ArAfs-bit/Crypto-Token-Analysis">GitHub</a>.</p>
-  </footer>
+<section id="conclusion">
+  <h2>Conclusion</h2>
+  <p>Based on my analysis, this contract has multiple red flags that could indicate a malicious or scam token, including hidden taxes, lack of true decentralization, and arbitrary control over transactions. Investors should be cautious when interacting with tokens of this nature.</p>
+  <p>By conducting this analysis, I have demonstrated my ability to:</p>
+  <ul>
+    <li>Manually analyze smart contracts for potential vulnerabilities.</li>
+    <li>Use blockchain tools like Etherscan and Quick Intel.</li>
+    <li>Understand key red flags that indicate possible scams in token contracts.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Created by Araf. View the project on <a href="https://github.com/ArAfs-bit/Crypto-Token-Analysis">GitHub</a>.</p>
+</footer>
 
 </body>
 </html>
