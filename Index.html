@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Token Analysis</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Assuming you will create a styles.css for styling -->
+</head>
+<body>
+  <header>
+    <h1>Crypto Token Analysis: Scam Token Investigation</h1>
+    <p>Analysis of suspicious token activity and findings from Quick Intel and Dextools.</p>
+  </header>
+
+  <section id="overview">
+    <h2>Project Overview</h2>
+    <p>This project aims to investigate a potentially scam token, specifically analyzing its contract, security vulnerabilities, and suspicious activities.</p>
+    <p>The contract address for the token is <strong>0x58cb23a3291305dfb3d38fd36ce4c307f2dacbe9</strong> and the token being analyzed is <strong>PROG (Purple Frog)</strong>.</p>
+  </section>
+
+  <section id="quick-intel">
+    <h2>Quick Intel Findings</h2>
+    <img src="images/QuickIntel.png" alt="Quick Intel Analysis" style="max-width: 100%; height: auto;">
+    <h3>Analysis Summary</h3>
+    <p>The token analysis performed on Quick Intel raised several concerns:</p>
+    <ul>
+      <li><strong>Honeypot Test Failed:</strong> This means users cannot sell the token after purchase, indicating a possible scam.</li>
+      <li><strong>Liquidity Pool (LP) Issues:</strong> The liquidity is either unlocked or burned, which poses a risk of the owner pulling out the liquidity and running off with investors' funds.</li>
+      <li><strong>Suspicious Contract Features:</strong> The token has a 0% Buy tax but a 100% Sell tax, meaning any sell orders will likely be blocked or heavily penalized.</li>
+      <li><strong>Ownership Control:</strong> The owner has full control over the token, raising the risk of malicious actions like rug pulling.</li>
+    </ul>
+  </section>
+
+  <section id="dextools">
+    <h2>Dextools Findings</h2>
+    <img src="images/Dextools.png" alt="Dextools Analysis" style="max-width: 100%; height: auto;">
+    <h3>Analysis Summary</h3>
+    <p>The findings on Dextools revealed the following suspicious activities:</p>
+    <ul>
+      <li><strong>Liquidity Manipulation:</strong> The liquidity is valued at $41.3K, but it's possible the owner is manipulating liquidity to appear trustworthy while planning a rug pull.</li>
+      <li><strong>Owner Withdrawals:</strong> The owner removed over $41,000 in a single sell transaction (shown in the trades section), indicating that they are siphoning funds from the token's liquidity pool.</li>
+      <li><strong>Highly Volatile Price Movements:</strong> The token experienced extreme volatility with a 22,802% price increase, typical of pump-and-dump schemes.</li>
+      <li><strong>Buy-Sell Imbalance:</strong> Out of 220 transactions, 175 were buys, while only 45 were sells, indicating market manipulation or artificially inflated demand.</li>
+    </ul>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Based on the analysis from Quick Intel and Dextools, it's clear that the PROG token exhibits several red flags, such as failed honeypot tests, locked liquidity, and suspicious owner activity. These findings strongly suggest that PROG is a scam token, likely to result in a rug pull where investors will lose their funds. Investors should avoid participating in this token.</p>
+  </section>
+
+  <footer>
+    <p>Created by Araf. View the project on <a href="https://github.com/ArAfs-bit/Crypto-Token-Analysis">GitHub</a>.</p>
+  </footer>
+</body>
+</html>
