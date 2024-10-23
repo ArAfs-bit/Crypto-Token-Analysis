@@ -1,4 +1,4 @@
-![Dextools Analysis](../screenshots/QuickIntel.png)
+![Dextools Analysis](../Screenshots/QuickIntel.png)
 *Figure: Screenshot of Quick Intel analysis.*
 
 Quick Intel Analysis Findings:
