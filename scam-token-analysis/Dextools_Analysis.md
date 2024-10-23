@@ -1,4 +1,4 @@
-[Screenshot of Dextools Analysis](/.screenshots/Dextools.png)
+[Screenshot of Dextools Analysis](screenshots/Dextools.png)
 
 DEXTools Analysis Findings:
 
