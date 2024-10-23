@@ -1,3 +1,6 @@
+![Dextools Analysis](../Screenshots/QuickIntel.png)
+*Figure: Screenshot of Quick Intel analysis.*
+
 Quick Intel Analysis Findings:
 
 Honeypot Test: Failed
