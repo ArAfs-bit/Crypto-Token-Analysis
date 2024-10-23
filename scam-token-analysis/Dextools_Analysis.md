@@ -1,4 +1,4 @@
-![Dextools Analysis](../screenshots/Dextools.png)
+![Dextools Analysis](../Screenshots/Dextools.png)
 *Figure: Screenshot of Dextools analysis.*
 
 
