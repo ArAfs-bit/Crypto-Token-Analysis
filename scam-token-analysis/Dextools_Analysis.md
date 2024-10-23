@@ -1,3 +1,4 @@
+[Screenshot of Dextools Analysis](/..screenshots/Dextools.png)
 DEXTools Analysis Findings:
 
 Liquidity Pool Drain:
