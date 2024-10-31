@@ -9,15 +9,15 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 
 ### Red Flag 2: Ownership Not Truly Renounced
 - The contract claims to renounce ownership but allows a privileged address (`_purpleforggg`) to retain control over the token’s functionality.
-- [Screenshot of Renounce Ownership Issue](Screenshots/RedFlag2.png)
+- ![Renounce Ownership Issue](Screenshots/RedFlag2.png)
 
 ### Red Flag 3: Arbitrary Transaction Limits
 - The owner can remove transaction limits at any time, allowing for potential manipulation of when users can sell their tokens.
-- [Screenshot of the Limit Manipulation](Screenshots/RedFlag3.png)
+- ![Limit Manipulation](Screenshots/RedFlag3.png)
 
 ### Red Flag 4: ETH Funneling to a Private Address
 - The swap function sends ETH to a private address during swaps, which could be used for a rug pull.
-- [Screenshot of Swap Function](Screenshots/RedFlag4.png)
+- ![Swap Function](Screenshots/RedFlag4.png)
 
 ## Quick Intel Analysis of Purple Frog (PROG)
 - Honeypot Test: FAILED
@@ -25,7 +25,7 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 - Sell Tax: 100%, making it impossible for users to sell their tokens.
 - Conclusion: The combination of a failed honeypot test, no liquidity lock, and high sell tax strongly suggests this token is a honeypot scam.
 
-[Screenshot of Quick Intel Analysis](Screenshots/QuickIntel.png)
+![Quick Intel Analysis](Screenshots/QuickIntel.png)
 
 ## DEXTools Analysis of Purple Frog (PROG)
 Key Findings:
@@ -35,7 +35,7 @@ Key Findings:
 - Rug Pull: Clear signs of a rug pull, with no remaining liquidity.
 - Conclusion:The DEXTools analysis shows that this token is a scam, with the owner conducting a rug pull and leaving the investors trapped.
 
-[Screenshot of Dextools Analysis](Screenshots/Dextools.png)
+![Dextools Analysis](Screenshots/Dextools.png)
 
 
 
