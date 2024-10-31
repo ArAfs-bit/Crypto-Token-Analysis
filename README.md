@@ -5,7 +5,7 @@ This repository contains an analysis of the PROG Token, which was found on Dexto
 
 ### Red Flag 1: Hidden Buy/Sell Taxes
 - The contract sets buy/sell taxes at 15%, which is unusually high and indicative of a honeypot scam.
-- **[Screenshot of the Tax Issue](Screenshots/RedFlag1.png)**
+- [Screenshot of the Tax Issue](Screenshots/RedFlag1.png)**
 
 ### Red Flag 2: Ownership Not Truly Renounced
 - The contract claims to renounce ownership but allows a privileged address (`_purpleforggg`) to retain control over the token’s functionality.
